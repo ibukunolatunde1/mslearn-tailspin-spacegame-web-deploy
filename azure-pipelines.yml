@@ -157,6 +157,7 @@ stages:
     pool:
       vmImage: 'ubuntu-20.04'
     environment: staging
+    dependsOn: waitForValidation
     variables:
     - group: 'Release'
     strategy:
